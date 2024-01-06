@@ -27,11 +27,11 @@ public class BallShockwave : MonoBehaviour
             yield return null;
 
         }
-        
+
     }
     private void Draw(float currentradius)
     {
-        
+
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -41,15 +41,15 @@ public class BallShockwave : MonoBehaviour
             StartCoroutine(Blast());
             StartCoroutine(instanteparticle());
             StartCoroutine(BallDestroy());
-           
+
         }
-        
+
     }
     private IEnumerator BallDestroy()
     {
-        
-        Destroy(ballobject,0.1f);
-        
+
+        Destroy(ballobject, 0.1f);
+
         yield return null;
     }
     private IEnumerator instanteparticle()
